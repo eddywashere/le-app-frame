@@ -1,0 +1,91 @@
+/***
+	conventions via https://github.com/necolas/idiomatic-css
+
+	LAYOUT
+
+	.l-wrapper
+	- .l-header
+	-- .l-container
+	- .l-content
+	-- .l-container
+	.l-footer
+	- .l-container
+
+	Properties ordered by position > display/box > color > text > other
+	@tag This is a tag named 'tag'
+	@todo This is a todo statement that describes an atomic task to be completed
+
+***/
+
+body {
+	min-width: 980px;
+	background: #ccc;
+	color: #222222;
+	font-size: 14px;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased; 
+}
+
+.l-header {
+	background: #f1f1f1;
+}
+
+.l-logo {
+	float: left;
+}
+
+.l-menu {
+	float: right;
+}
+
+.l-menu > li {
+	float: left;
+	padding: 0 5px;
+}
+
+.l-menu a {
+	text-decoration: none;
+}
+
+.l-content {
+	background: #fff;
+}
+
+.l-footer {
+	background: #ccc;
+	text-align: center;
+}
+
+.l-container {
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 10px;
+	width: 950px;
+}
+
+/***
+	Sticky Footer
+***/
+
+html, body, .wrapper { 
+	height: 100%;
+}
+
+body > .wrapper {
+	min-height: 100%;
+	height: auto;
+	background: #fff;
+}
+
+.l-footer { 
+	position: relative;
+	clear: both; 
+	margin-top: -50px;
+	height: 50px;
+}
+
+/* extra padding because of .l-content's original padding: 20px; */
+.l-content { 
+	padding-bottom: 50px;
+}
