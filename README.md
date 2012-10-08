@@ -11,13 +11,13 @@ Features:
 ### <a href="http://eddywashere.github.com/Layouts/examples/fixed/">Fixed Width</a>
 
 - Proper 100% width row sections
-- Stick Footer<small>*2</small>
+- Sticky Footer<small>*2</small>
 
 
 ### <a href="http://eddywashere.github.com/Layouts/examples/max-width/">Max-Width / Responsive</a>
 
 - No min-width
-- Stick Footer<small>*2</small>
+- Sticky Footer<small>*2</small>
 
 <hr>
 
