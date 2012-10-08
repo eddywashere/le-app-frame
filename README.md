@@ -1,6 +1,6 @@
 ## Layouts
 
-### App Frame
+### <a href="http://eddywashere.github.com/Layouts/examples/app-frame/">App Frame</a>
 
 Features:
 
@@ -8,13 +8,13 @@ Features:
 - Scrollable content area
 - Max height to reset header/footer (footer is still sticky<small>*2</small>)
 
-### Fixed Width
+### <a href="http://eddywashere.github.com/Layouts/examples/fixed/">Fixed Width</a>
 
 - Proper 100% width row sections
 - Stick Footer<small>*2</small>
 
 
-### Max-Width / Responsive
+### <a href="http://eddywashere.github.com/Layouts/examples/max-width/">Max-Width / Responsive</a>
 
 - No min-width
 - Stick Footer<small>*2</small>
