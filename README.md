@@ -1,10 +1,12 @@
-# The Perfect* App Frame
+# Le App Frame
+
+Attempts at perfecting the "app frame" look.
 
 ### Examples
 
-- <a href="http://eddywashere.github.com/Layouts/examples/fluid/content.html">Fluid</a>
-- <a href="http://eddywashere.github.com/Layouts/examples/fixed/content.html">Fixed Width</a>
-- <a href="http://eddywashere.github.com/Layouts/examples/max-width/content.html">Max-Width / Responsive</a>
+- <a href="http://eddywashere.github.com/le-app-frame/examples/fluid/content.html">Fluid</a>
+- <a href="http://eddywashere.github.com/le-app-frame/examples/fixed/content.html">Fixed Width</a>
+- <a href="http://eddywashere.github.com/le-app-frame/examples/max-width/content.html">Max-Width / Responsive</a>
 
 ### Features
 
