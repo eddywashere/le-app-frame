@@ -5,11 +5,23 @@
 
 	.l-wrapper
 	- .l-header
-	-- .l-container
-	- .l-content
-	-- .l-container
+	-- .l-inner
+	--- .l-content
+	- .l-body
+	-- .l-inner
+	--- .l-content
+	- .l-push (keeps the sticky footer down when .l-body can't)
 	.l-footer
-	- .l-container
+	- .l-inner
+	-- .l-content
+
+	A "l-" designates layout markup.
+
+	STICKY FOOTER
+	.l-wrapper & .l-push keep the footer sticky when .l-body content can't
+
+	APP-FRAME
+	
 
 	Properties ordered by position > display/box > color > text > other
 	@tag This is a tag named 'tag'
@@ -17,74 +29,138 @@
 
 ***/
 
-body {
-	background: #ccc;
-	color: #222222;
-	font-size: 14px;
-	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased; 
+/* Max Width */
+
+.l-content {
+	max-width: 60em;
+	padding: 0 1em;
 }
+/***
+	App Frame
+***/
 
 .l-header {
-	background: #f1f1f1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	overflow: hidden;
+	background-color: #333;
+	line-height: 1;
+	z-index: 10;
+}
+
+.l-inner{
+	margin: 0 auto;
 }
 
 .l-logo {
 	float: left;
 }
 
+.l-logo a {
+	display: block;
+	width: 130px;
+	text-align: center;
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 1em;
+	line-height: 1;
+	background: url("/img/logo.png") no-repeat center center;
+}
+
+.l-logo a: hover {
+	background-color: rgba(0,0,0,0.12)
+}
+
 .l-menu {
-	float: right;
+	margin: 0;
+	padding: 0;
 }
 
 .l-menu > li {
 	float: left;
-	padding: 0 5px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: 1;
 }
 
-.l-menu a {
+.l-menu > li > a{
+	float: left;
+	padding: 1em;
 	text-decoration: none;
+	color: #e8e8e8;
+}
+
+.l-menu > li > a: hover{
+	background-color: rgba(0,0,0,0.12)
 }
 
 .l-content {
+	overflow: hidden;
+	margin: 0 auto;
+	max-width: 64em}
+
+.l-body{
+	padding-top: 4em;
 	background: #fff;
 }
 
-.l-footer {
+.l-footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
 	background: #ccc;
 	text-align: center;
+	z-index: 10;
 }
 
-.l-container {
-	overflow: hidden;
-	margin: 0 auto;
-	padding: 10px;
-	max-width: 950px;
+.l-footer-inner{
+	margin: 0 1em;
 }
 
 /***
 	Sticky Footer
 ***/
 
-html, body, .wrapper { 
+html, body { 
 	height: 100%;
 }
 
-body > .wrapper {
-	min-height: 100%;
-	height: auto;
-	background: #fff;
+body > .l-wrapper {
+	min-height:100%;
+	height:auto !important;
+	height:100%;
+	margin:0 auto -2em;
 }
 
-.l-footer { 
-	position: relative;
-	clear: both; 
-	margin-top: -50px;
-	height: 50px;
+/* .l-push must be the same height as .l-footer */
+.l-footer, .l-push {
+  height: 2em;
 }
 
-/* extra padding because of .l-content's original padding: 20px; */
-.l-content { 
-	padding-bottom: 50px;
+/* identify footer content height and update .l-footer and .l-push */
+.l-footer p {
+	padding: .5em 1em;
+	margin: 0;
+	line-height: 1;
 }
+
+/* Sans-App-Frame for shorter viewports */
+@media only screen and (max-height: 37.5em){
+	.l-header, .l-footer {
+		position:relative;
+	}
+	.l-body {
+		padding-top:1em;
+	}
+}
+
+/***
+	End Sticky Footer
+***/

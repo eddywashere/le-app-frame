@@ -1,0 +1,216 @@
+/* Base Styles */
+
+body {
+  font: 100%/1.5 "Lucida Grande", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #2096da;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #157bb6;
+}
+
+a:focus {
+  color: #2096da;
+  outline: none;
+}
+
+p {
+  margin: 0 0 1.5em;
+}
+
+p small {
+  font-size: 0.667em;
+  color: #666;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.667em;
+  color: #000;
+  text-rendering: optimizelegibility;
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.953em;
+}
+
+h1 small {
+  font-size: 1.969em;
+  line-height: 1;
+  display: block;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h2 small {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 1.969em;
+  color: #333;
+}
+
+h3 small {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h4 small {
+  font-size: 12px;
+}
+
+h5 {
+  font-size: 1.313em;
+}
+
+h6 {
+  font-size: 1em;
+  color: #666;
+  text-transform: uppercase;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: disc;
+  padding: 0;
+  margin: 0 0 0.667em 1.5em;
+}
+
+ol {
+  list-style: decimal;
+  padding: 0;
+  margin: 0 0 0.667em 1.969em;
+}
+
+li {
+  line-height: 1.5;
+}
+
+dl {
+  margin-bottom: 0.667em;
+  font-size: 1em;
+}
+
+dt,
+dd {
+  line-height: 1.5;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 1.5em;
+  font-size: 0.875em;
+}
+
+hr {
+  clear: both;
+  display: block;
+  height: 0px;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,0.12);
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  margin: 1.5 0;
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+abbr {
+  font-size: 90%;
+  text-transform: uppercase;
+  border-bottom: 1px dotted #ddd;
+  cursor: help;
+}
+
+blockquote {
+  padding: 0 0 0 1.5em;
+  margin: 0 0 1.5em;
+  border-left: 5px solid #999;
+  color: #999;
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+blockquote p span {
+  color: #666;
+  font-style: italic;
+}
+
+blockquote small {
+  display: block;
+  line-height: 1.5;
+  color: #666;
+}
+
+blockquote small:before {
+  content: '\2014 \00A0';
+}
+
+code,
+pre {
+  color: #000;
+  text-shadow: 0 1px #fff;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}

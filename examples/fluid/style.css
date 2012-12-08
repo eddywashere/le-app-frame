@@ -29,16 +29,6 @@
 
 ***/
 
-/* Fixed Width */
-
-body {
-	min-width: 62em; /* fixes layout issues when users have to horizontally scroll */
-}
-
-.l-content {
-	width: 60em;
-	padding: 0 1em;
-}
 /***
 	App Frame
 ***/
@@ -56,7 +46,7 @@ body {
 }
 
 .l-inner{
-	margin: 0 auto;
+	margin: 0 1em;
 }
 
 .l-logo {
