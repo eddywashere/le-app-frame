@@ -4,9 +4,9 @@ Attempts at perfecting the "app frame" look.
 
 ### Examples
 
-- <a href="http://eddywashere.github.com/le-app-frame/examples/fluid/content.html">Fluid</a>
-- <a href="http://eddywashere.github.com/le-app-frame/examples/fixed/content.html">Fixed Width</a>
-- <a href="http://eddywashere.github.com/le-app-frame/examples/max-width/content.html">Max-Width / Responsive</a>
+- <a href="http://eddywashere.github.com/le-app-frame/fluid/content.html">Fluid</a>
+- <a href="http://eddywashere.github.com/le-app-frame/fixed/content.html">Fixed Width</a>
+- <a href="http://eddywashere.github.com/le-app-frame/max-width/content.html">Max-Width / Responsive</a>
 
 ### Features
 
