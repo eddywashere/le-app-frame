@@ -2,13 +2,13 @@
 
 Attempts at perfecting the "app frame" look.
 
-### Examples
+## Examples
 
 - <a href="http://eddywashere.github.com/le-app-frame/fluid/content.html">Fluid</a>
 - <a href="http://eddywashere.github.com/le-app-frame/fixed/content.html">Fixed Width</a>
 - <a href="http://eddywashere.github.com/le-app-frame/max-width/content.html">Max-Width / Responsive</a>
 
-### Features
+## Features
 
 - Fixed Header/Footer <small>*1</small>
 - Proper 100% width row sections
